@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Room Slot Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Study Room Booking</h1>
+    <p>Book your private study slot below</p>
+
+    <!-- Booking form -->
+    <form id="bookingForm">
+      <!-- Student name -->
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <!-- Department selection -->
+      <input type="text" id="department" placeholder="Enter your department" required>
+
+      <!-- Room number selection -->
+      <select id="room" required>
+        <option value="">Select Room</option>
+        <option value="Room 1">Room 1</option>
+        <option value="Room 2">Room 2</option>
+        <option value="Room 3">Room 3</option>
+        <option value="Room 4">Room 4</option>
+        <option value="Room 5">Room 5</option>
+      </select>
+
+      <!-- Date and Time slot -->
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+
+      <!-- Submit button -->
+      <button type="submit">Book Slot</button>
+    </form>
+
+    <!-- Confirmation message will show here -->
+    <div id="confirmation"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
